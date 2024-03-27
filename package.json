@@ -1,0 +1,19 @@
+{
+  "name": "social-links-profile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "concurrently \"tailwindcss -o build.css --minify\" \"\"",
+    "dev": "concurrently \"tailwindcss -i ./src/input.css -o ./src/output.css --watch\" \"live-server .\"",
+    "start": "concurrently \"command1 arg\" \"command2 arg\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "live-server": "^1.2.2",
+    "tailwindcss": "^3.4.3"
+  }
+}
