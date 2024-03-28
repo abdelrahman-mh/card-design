@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "concurrently \"tailwindcss -o build.css --minify\" \"\"",
-    "dev": "concurrently \"tailwindcss -i ./src/input.css -o ./src/output.css --watch\" \"live-server .\"",
-    "start": "concurrently \"command1 arg\" \"command2 arg\""
+    "build": "mkdir ./dist && cp -rf ./src/assets ./src/index.html ./dist && tailwindcss -o ./dist/output.css --minify",
+    "start": "concurrently \"command1 arg\" \"command2 arg\"",
+    "format": "prettier --write .",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,8 @@
   "devDependencies": {
     "concurrently": "^8.2.2",
     "live-server": "^1.2.2",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.13",
     "tailwindcss": "^3.4.3"
   }
 }
