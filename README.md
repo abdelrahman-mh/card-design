@@ -1,4 +1,4 @@
-Builds with 100% with Tailwind Css, ses live [Demo](https://abdelrahman-mh.github.io/card-design/)
+Builds with 100% Tailwind Css, ses live [Demo](https://abdelrahman-mh.github.io/card-design/)
 
 ## For test it :point_right:
 
