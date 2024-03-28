@@ -24,4 +24,6 @@ npm start
 # 👍
 ```
 
+> this will run app at [http://127.0.0.1:8080/](http://127.0.0.1:8080/)
+
 ![screenshot](./docs/screenshot.jpg)

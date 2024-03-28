@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "mkdir ./dist && cp -rf ./src/assets ./src/index.html ./dist && tailwindcss -o ./dist/output.css --minify",
-    "start": "concurrently \"command1 arg\" \"command2 arg\"",
+    "start": "concurrently \"tailwindcss -i ./src/input.css -o ./src/output.css --watch\" \"live-server ./src \"",
     "format": "prettier --write .",
     "deploy": "gh-pages -d dist"
   },
